@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(../image/hot.png) no-repeat center/cover;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather {
+    min-width: 350px;
+    height: 600px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    background-color: yellowgreen;
+    background: url(../image/hot.png) no-repeat center/cover;
+}
+
+.cold {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(../image/cold.png) no-repeat center/cover;
+}
+
+.weather.cold {
+    background: url(../image/cold.png) no-repeat center/cover;
+}
+
+.search {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 0 15px 0 15px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s;
+}
+
+.search:focus {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px 0 15px 0;
+}
+
+.content {
+    text-align: center;
+    color: white;
+    margin: 40px 0;
+}
+
+.capital {
+    white-space: nowrap;
+    font-size: 35px;
+    text-shadow: 2px 2px rgb(0 0 0 / 50%);
+}
+
+.time {
+    font-size: 15px;
+    margin: 6px 0;
+}
+
+.temperature {
+    font-size: 65px;
+    text-shadow: 4px 4px rgb(0 0 0 / 60%);
+    display: inline-block;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    box-shadow: 2px 2px 0 2px rgb(0 0 0 / 50%);
+    margin: 20px 0 30px;
+    font-weight: 800;
+}
+
+.short-desc {
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 3px 3px rgb(0 0 0 / 40%);
+}
+
+.more-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.more-desc>div {
+    font-size: 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.more-desc>div>i {
+    margin: 10px 0;
+}
