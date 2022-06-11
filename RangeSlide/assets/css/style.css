@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 150px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.range {
+    margin-top: 40px;
+    width: 600px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 100px;
+    position: relative;
+    overflow: hidden;
+    cursor: e-resize;
+    overflow: hidden;
+}
+
+.range-bar {
+    background: linear-gradient(to right, #bb69cc, #246bac);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.range-bar span {
+    color: white;
+    font-size: 26px;
+}
