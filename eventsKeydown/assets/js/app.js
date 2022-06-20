@@ -13,6 +13,8 @@ document.addEventListener('keydown', (e) => {
     document.querySelector('.result').innerText = e.which;
 
 
+    console.log(e);
+
     eKey.innerText = keyName;
     eLocation.innerText = e.location;
     eWhich.innerText = e.which;
